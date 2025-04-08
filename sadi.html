@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+      
+      body {
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+            color: #5a5a5a;
+        }
+        .invitation {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            position: relative;
+        }
+        .invitation h1 {
+            font-size: 2em;
+            color: #ff6f61;
+        }
+        .invitation p {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+        .invitation .date-time {
+            font-style: italic;
+            color: #888;
+        }
+        .invitation .rsvp {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #ff6f61;
+        }
+        .flower {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('https://path/to/flower-image.png') no-repeat center center / contain;
+        }
+        .flower.top-left {
+            top: -25px;
+            left: -25px;
+        }
+        .flower.top-right {
+            top: -25px;
+            right: -25px;
+        }
+        .flower.bottom-left {
+            bottom: -25px;
+            left: -25px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="invitation">
+        <h1>You're Invited!</h1>
+        <p>To the wedding of</p>
+        <p><strong>Deblina and Harsh</strong></p>
+        <p class="date-time">30 February 2025<br>at 4:00 PM</p>
+        <p>Location:<br>Harsh ke dill me</p>
+        <p class="rsvp">Dont forgot to bring your friends and family</p>
+    </div>
+</body>
+</html>

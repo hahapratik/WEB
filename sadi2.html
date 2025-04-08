@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+            color: #5a5a5a;
+            overflow: hidden; /* Prevent scrollbar for moving elements */
+        }
+        .invitation {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+            position: relative;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .invitation h1 {
+            font-size: 2em;
+            color: #ff6f61;
+            animation: textSlideIn 2s ease-in-out;
+        }
+        .invitation p {
+            margin: 10px 0;
+            font-size: 1em;
+            animation: textSlideIn 2s ease-in-out;
+                }
+        .invitation .date-time {
+            font-style: italic;
+            color: #888;
+        }
+        .invitation .rsvp {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #ff6f61;
+        }
+        .flower {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('https://cdn-icons-png.flaticon.com/512/25/25297.png') no-repeat center center / contain;
+            animation: float 4s ease-in-out infinite;
+        }
+        .flower.top-left {
+            top: -25px;
+            left: -25px;
+        }
+        .flower.top-right {
+            top: -25px;
+            right: -25px;
+        }
+        .flower.bottom-left {
+            bottom: -25px;
+            left: -25px;
+        }
+        ower.bottom-right {
+            bottom: -25px;
+            right: -25px;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes textSlideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation">
+        <div class="flower top-left"></div>
+        <div class="flower top-right"></div>
+        <div class="flower bottom-left"></div>
+        <div class="flower bottom-right"></div>
+        <h1>You're Invited!</h1>
+        <p>To the wedding of</p>
+        <p><strong>divya weds raghav</strong></p>
+        <p class="date-time">30 February 2025<br>at 4:00 PM</p>
+        <p>Location:<br>Harsh ke dill me</p>
+        <p class="rsvp">Dont forgot to bring your friends and family</p>
+    </div>
+</body>
+</html>

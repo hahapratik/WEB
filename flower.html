@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Flower</title>
+    <link rel="stylesheet" href="styles.css">
+   <style> body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f8ff;
+        margin: 0;
+    }
+    
+    .flower {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .petal {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-color: #ff69b4;
+        border-radius: 50%;
+        animation: spin 5s linear infinite;
+    }
+    
+    .petal1 {
+        top: 0;
+        left: 25px;
+    }
+    
+    .petal2 {
+        top: 25px;
+        left: 0;
+    }
+    
+    .petal3 {
+        top: 25px;
+        left: 50px;
+    }
+    
+    .petal4 {
+        top: 50px;
+        left: 25px;
+    }
+    
+    .center {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 50px;
+        height: 50px;
+        background-color: #ff4500;
+        border-radius: 50%;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+</head>
+<body>
+    <div class="flower">
+        <div class="petal petal1"></div>
+        <div class="petal petal2"></div>
+        <div class="petal petal3"></div>
+        <div class="petal petal4"></div>
+        <div class="center"></div>
+    </div>
+</body>
+</html>
